@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background-image:radial-gradient(blue, skyblue, white) ;">
+  <!--header section-->
+  <header class="header">
+    <div class="container">
+      <div class="nav-brand">
+        <div class="logo">
+         <img class="logo-icon" src="images/logo.jpg" alt="logo">
+         <div class="text">
+           <span class="logo-text">CODIFYTEC</span>
+          <span class="logo-t">Company Ltd</span>
+         </div>
+         
+        </div>
+      </div>
+      <nav class="nav" >
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="project.html" class="nav-link">Projects</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+     <a style="text-decoration: none;" href="#contact.html"> <button  class="contact-btn">Contact Me</button> </a>
+    </div>
+  </header>
+  <main class="containers">
+    <h1>Contact codifytec</h1>
+    <form id="contactForm" action="https://formspree.io/f/mkgdqqlp" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p id="statusMsg" role="alert" aria-live="polite"></p>
+    </form>
+  </main>
+   <section class="tools">
+    <div class="container">
+      <div class="tools-header">
+        <span class="section-label">My Favorite Tools</span>
+        <h2 class="tools-title">
+          <span class="highlight">Exploring the Tools</span><br>
+          Behind My Designs
+        </h2>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-icon" style="background-image:url(images/Python.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon" style="background-image:url(images/JS.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon" style="background-image:url(images/ms.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon" style="background-image:url(images/Cpp.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon" style="background-image:url(images/adobe.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          </div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon" style="background-image:url(images/VSC.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("gaQPNZgyI1YojHuMn"); // Replace with your actual Public Key
+  })();
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
